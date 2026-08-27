@@ -1,0 +1,175 @@
+{
+  "baseline_log": [
+    {
+      "section": "Durable Agent State",
+      "context_tokens": 49,
+      "exposed_retrieval_latency_ms": 205.9,
+      "chunks_used": [
+        "c01",
+        "c02",
+        "c07"
+      ],
+      "prefetched_before_use": false
+    },
+    {
+      "section": "Graph-Structured Retrieval",
+      "context_tokens": 98,
+      "exposed_retrieval_latency_ms": 192.1,
+      "chunks_used": [
+        "c04",
+        "c03",
+        "c05"
+      ],
+      "prefetched_before_use": false
+    },
+    {
+      "section": "Knowledge Graph Drift",
+      "context_tokens": 149,
+      "exposed_retrieval_latency_ms": 232.1,
+      "chunks_used": [
+        "c05",
+        "c06",
+        "c03"
+      ],
+      "prefetched_before_use": false
+    },
+    {
+      "section": "Human Correction and Reviewer Fatigue",
+      "context_tokens": 206,
+      "exposed_retrieval_latency_ms": 185.8,
+      "chunks_used": [
+        "c08",
+        "c07",
+        "c02"
+      ],
+      "prefetched_before_use": false
+    },
+    {
+      "section": "Hierarchical Outlining for Drafting",
+      "context_tokens": 263,
+      "exposed_retrieval_latency_ms": 222.9,
+      "chunks_used": [
+        "c10",
+        "c09",
+        "c20"
+      ],
+      "prefetched_before_use": false
+    },
+    {
+      "section": "Speculative Context Prefetching",
+      "context_tokens": 318,
+      "exposed_retrieval_latency_ms": 209.3,
+      "chunks_used": [
+        "c11",
+        "c12",
+        "c13"
+      ],
+      "prefetched_before_use": false
+    }
+  ],
+  "hoscp_log": [
+    {
+      "section": "Durable Agent State",
+      "context_tokens": 55,
+      "exposed_retrieval_latency_ms": 0.0,
+      "chunks_used": [
+        "c01",
+        "c02",
+        "c07"
+      ],
+      "prefetched_before_use": true
+    },
+    {
+      "section": "Graph-Structured Retrieval",
+      "context_tokens": 54,
+      "exposed_retrieval_latency_ms": 0.0,
+      "chunks_used": [
+        "c04",
+        "c03",
+        "c05"
+      ],
+      "prefetched_before_use": true
+    },
+    {
+      "section": "Knowledge Graph Drift",
+      "context_tokens": 57,
+      "exposed_retrieval_latency_ms": 0.0,
+      "chunks_used": [
+        "c05",
+        "c06",
+        "c03"
+      ],
+      "prefetched_before_use": true
+    },
+    {
+      "section": "Human Correction and Reviewer Fatigue",
+      "context_tokens": 65,
+      "exposed_retrieval_latency_ms": 0.0,
+      "chunks_used": [
+        "c08",
+        "c07",
+        "c02"
+      ],
+      "prefetched_before_use": true
+    },
+    {
+      "section": "Hierarchical Outlining for Drafting",
+      "context_tokens": 64,
+      "exposed_retrieval_latency_ms": 0.0,
+      "chunks_used": [
+        "c10",
+        "c09",
+        "c20"
+      ],
+      "prefetched_before_use": true
+    },
+    {
+      "section": "Speculative Context Prefetching",
+      "context_tokens": 61,
+      "exposed_retrieval_latency_ms": 0.0,
+      "chunks_used": [
+        "c11",
+        "c12",
+        "c13"
+      ],
+      "prefetched_before_use": true
+    }
+  ],
+  "baseline_summary": {
+    "agent": "baseline (flat context, synchronous retrieval)",
+    "sections": 6,
+    "context_tokens_per_section": [
+      49,
+      98,
+      149,
+      206,
+      263,
+      318
+    ],
+    "peak_context_tokens": 318,
+    "final_context_tokens": 318,
+    "mean_exposed_latency_ms": 208.0,
+    "total_exposed_latency_ms": 1248.1,
+    "prefetch_hit_rate": 0.0
+  },
+  "hoscp_summary": {
+    "agent": "HO-SCP (isolated context, speculative prefetch)",
+    "sections": 6,
+    "context_tokens_per_section": [
+      55,
+      54,
+      57,
+      65,
+      64,
+      61
+    ],
+    "peak_context_tokens": 65,
+    "final_context_tokens": 61,
+    "mean_exposed_latency_ms": 0.0,
+    "total_exposed_latency_ms": 0.0,
+    "prefetch_hit_rate": 1.0
+  },
+  "context_reduction_final_pct": 80.8,
+  "context_reduction_peak_pct": 79.6,
+  "latency_reduction_pct": 100.0
+}
